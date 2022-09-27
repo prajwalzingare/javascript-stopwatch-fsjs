@@ -56,10 +56,29 @@ function stopwatch() {
       min = 0;
       sec = 0;
     }
-    document.getElementById("hr").innerHTML = hr;
-    document.getElementById("min").innerHTML = min;
-    document.getElementById("sec").innerHTML = sec;
-    document.getElementById("count").innerHTML = count;
+
+    var hrString = hr;
+    var minString = min;
+    var secString = sec;
+    var countString = count;
+
+    if (hr < 10) {
+      hrString = "0" + hrString;
+    }
+    if (min < 10) {
+      minString = "0" + minString;
+    }
+    if (sec < 10) {
+      secString = "0" + secString;
+    }
+    if (count < 10) {
+      countString = "0" + countString;
+    }
+
+    document.getElementById("hr").innerHTML = hrString;
+    document.getElementById("min").innerHTML = minString;
+    document.getElementById("sec").innerHTML = secString;
+    document.getElementById("count").innerHTML = countString;
     setTimeout(stopwatch, 10);
   }
 }
