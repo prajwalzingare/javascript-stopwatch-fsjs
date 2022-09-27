@@ -38,7 +38,7 @@ function reset() {
 
 //stopwatch function
 function stopwatch() {
-  console.log("object");
+  //   console.log("object");
 
   if (timer == true) {
     count = count + 1;
@@ -79,6 +79,8 @@ function stopwatch() {
     document.getElementById("min").innerHTML = minString;
     document.getElementById("sec").innerHTML = secString;
     document.getElementById("count").innerHTML = countString;
+
+    //settimeout function
     setTimeout(stopwatch, 10);
   }
 }
