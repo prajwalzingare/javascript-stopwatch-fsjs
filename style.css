@@ -1,0 +1,84 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d2d0d5;
+}
+
+.container {
+    user-select: none;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#time {
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+    padding: 0 10px;
+}
+
+#time span {
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-container .buttons {
+    padding: 6px 35px;
+    outline: none;
+    border: none;
+    margin: 0 20px;
+    color: #7D2Ae8;
+    background: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+.btn-container .buttons:nth-child(1):hover {
+    background-color: rgb(27, 235, 27);
+    color: black;
+    transition: ease-out .2s;
+}
+
+.btn-container .buttons:nth-child(2):hover {
+    background-color: rgb(230, 25, 18);
+    color: black;
+    transition: ease-out .2s;
+}
+
+.btn-container .buttons:nth-child(3):hover {
+    background-color: rgb(235, 110, 27);
+    color: black;
+    transition: ease-out .2s;
+}
